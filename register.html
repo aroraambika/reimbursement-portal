@@ -1,0 +1,221 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Registeration Of Employee</title>
+
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+     <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+   <style type="text/css">
+     .card{
+       margin: 50px;
+       padding: 50px;
+     }
+     .bkg
+     {
+      background-color:	#99ccff;
+     }
+     .colorchnge
+     {
+       color: blue;
+     }
+     h4
+     {
+       font-family: "Georgia",serif;
+       color: #2196f3;
+     }
+   </style>
+
+  </head>
+
+
+  <body class="bkg">
+
+    <div class="container">
+      <div class="card row">
+    <center><h4 class="col s12"><u>REGISTER AN EMPLOYEE</u></h4></center><br/><br/>
+
+    <form action="register.php" method="POST">
+
+        <div class="row">
+          <div class="input-field col s6">
+           <input type="text" name="fname" class="validate">
+           <label for="fname" class="blue-text">First Name</label>
+          </div>
+
+          <div class="input-field col s6">
+            <input type="text" name="lname" class="validate">
+            <label for="lname" class="blue-text">Last Name</label>
+          </div>
+
+        </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+            <input type="email" name="emailid" class ="validate" required>
+            <label for="emailid" class="blue-text">Email Id</label>
+
+            </div>
+          </div>
+
+
+        <div class="row">
+          <div class="input-field col s6">
+          <input type="password" name="pswd">
+         <label for="pswd" class="blue-text">Password</label>
+         </div>
+       </div>
+
+
+
+      <div class="row">
+        <div class="input-field col s6">
+           <select name="dept">
+             <option value="" disabled selected>Select your department</option>
+             <option value="prod">Production</option>
+             <option value="rnd">Research and Development</option>
+             <option value="purchase">Purchasing</option>
+             <option value="mktg">Marketing</option>
+             <option value="hr">Human Resource Management</option>
+             <option value="acc_n_fin">Accounting and Finance</option>
+           </select>
+            <label for="dept" class="blue-text">Department</label>
+         </div>
+     </div>
+
+
+     <div class="row">
+       <div class="input-field col s6">
+         <select name="desg">
+           <option class="colorchnge" value="" disabled selected>Select your designation</option>
+           <option class="colorchnge" value="emp">Employee</option>
+           <option class="colorchnge" value="ass_mgr">Assistant Manager</option>
+           <option class="colorchnge" value="mgr">Manager</option>
+           <option class="colorchnge" value="fin_mgr">Finance Manager</option>
+         </select>
+          <label for="desg" class="blue-text">Designation</label>
+        </div>
+    </div>
+
+        <div class="row">
+          <div class="input-field col s6">
+            <input type="text" name="sal">
+            <label for="sal" class="blue-text">Salary per Annum</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s6">
+           <input type="text" name="dob" class="datepicker">
+           <label for="dob" class="purple-text">DOB</label>
+          </div>
+        </div>
+
+         <div class="row">
+           <div class="input-field col s6">
+             <input type="date" name="doj" class="datepicker">
+             <label for="doj" class="blue-text">Date of joining</label>
+           </div>
+         </div>
+
+     <div class="row">
+       <div class="input-field col s6">
+         <input type="text" name="accnum" class="validate">
+         <label class="blue-text">Account Number</label>
+       </div>
+     </div>
+
+     <div class="row">
+       <div class="input-field col s6">
+        <input type="text" name="bank_name" class="validate">
+        <label class="blue-text">Bank Name</label>
+       </div>
+     </div>
+
+
+         <label class="left purple-text">Gender</label><br/>
+         <p>
+           <input type="radio" name="gender" value="Male" class="with-gap" id="g1">
+           <label for="g1" class="blue-text">Male</label>
+         </p>
+         <p>
+          <input type="radio" name="gender" value="Female" class="with-gap" id="g2">
+          <label for="g2"  class="blue-text">Female</label><br/><br/>
+        </p>
+
+    <div class="row">
+       <div class="input-field col s6">
+         <input type="text" name="street_addr" class="validate">
+          <label class="blue-text">Street Address</label>
+      </div>
+    </div>
+
+    <div class="row">
+       <div class="input-field col s6">
+         <input type="text" name="city" class="validate">
+         <label class="blue-text">City</label>
+       </div>
+    </div>
+
+
+     <div class="row">
+        <div class="input-field col s6">
+          <input type="text" name="state" class="validate">
+          <label class="blue-text">State</label>
+        </div>
+    </div>
+
+      <div class="row">
+         <div class="input-field col s6">
+           <input type="text" name="cntry" class="validate">
+           <label class="blue-text">Country</label>
+         </div>
+       </div>
+
+       <div class="row">
+          <div class="input-field col s6">
+             <input type="text" name="zcode"class="validate">
+             <label class="blue-text">Zip Code</label>
+          </div>
+        </div>
+
+        <div class="row">
+           <div class="input-field col s6">
+              <input type="text" name="mobno"class="validate">
+              <label class="blue-text">Mobile No.</label>
+           </div>
+         </div>
+
+       <center><button type="submit"  class="btn waves-effect blue"><i class="large material-icons left">person_outline</i>Register</button>
+       </center>
+
+    </form>
+  </div>
+  </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript">
+  $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15, // Creates a dropdown of 15 years to control year,
+     today: 'Today',
+     clear: 'Clear',
+     close: 'Ok',
+    // closeOnSelect: false // Close upon selecting a date,
+  });
+
+  $(document).ready(function() {
+    $('select').material_select();
+    });
+
+
+  </script>
+
+
+  </body>
+</html>
